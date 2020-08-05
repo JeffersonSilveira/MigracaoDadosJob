@@ -14,6 +14,7 @@ Crie no seu banco de dados Mysql, duas tabelas.
 2- migracao_dados
 Acesse o banco de dados migracao_dados e execute esse comando abaixo.
 Obs: Os arquivos que serão importados estão em um diretório no projeto "files", com dois arquivos csv, dados_bancarios.csv e pessoas.csv.
+Após o processamento será gerado no diretório "files" o arquivo pessoas_invalidas.csv.
 ```
 DROP TABLE IF EXISTS pessoa;
 CREATE TABLE pessoa(id INT, nome VARCHAR(500),email VARCHAR(500),data_nascimento DATETIME,idade INT, PRIMARY KEY(id));
